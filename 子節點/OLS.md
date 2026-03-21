@@ -4,16 +4,17 @@ tags:
 ---
 OLS (Ordinary Least Squares, 普通最小平方法)
 
-- **定義與公式：** OLS 是統計學中最常見的回歸方法，核心假設是 X（自變數）無誤差，==y（依變數）存在隨機誤差==。其目標是最小化實際值 $y$ 與預測值 $\hat y$ 之間的**垂直距離平方和**。
+### 定義與公式： 
+OLS 是統計學中最常見的回歸方法，核心假設是 X（自變數）無誤差，==y（依變數）存在隨機誤差==。其目標是最小化實際值 $y$ 與預測值 $\hat y$ 之間的**垂直距離平方和**。
 <br>
 	- **線性模型**：假設模型為 $$y=βx+ϵ$$
 	我們要找到 $\hat β$​ 使得殘差平方和最小
 	$$Q=\sum_{i=1}^{n}(\hat y_i​−y_i​)^2=\sum_{i=1}^{n}(y_i​−βx_i​)^2$$
 	<br>
 	- **求解目標**：使均方誤差 (MSE) 最小化，找到 $\hat β$​ 使得殘差平方和最小，即 $$\hat β​=\frac{∑(x_i​−\bar x)(y_i​−\bar y​)}{∑(x_i​−\bar x)^2}​$$
-- 程式嗎：
-	- 使用 numpy 存資料
-	```python
+### 程式嗎：
+使用 numpy 存資料
+```python
 	import numpy as np
 	from sklearn.linear_model import LinearRegression
 	
@@ -27,9 +28,9 @@ OLS (Ordinary Least Squares, 普通最小平方法)
 	
 	print(f"OLS 斜率: {model.coef_[0]:.4f}")
 	print(f"OLS 截距: {model.intercept_.4f}")
-	```
-	- 使用 pandas 讀取資料
-	```python
+```
+使用 pandas 讀取資料
+```python
 	import pandas as pd
 	from sklearn.linear_model import LinearRegression
 	
@@ -47,4 +48,4 @@ OLS (Ordinary Least Squares, 普通最小平方法)
 	
 	print(f"OLS 斜率: {model.coef_[0]:.4f}")
 	print(f"OLS 截距: {model.intercept_.4f}")
-	```
+```

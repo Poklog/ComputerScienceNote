@@ -9,8 +9,8 @@ $\hat y_i​：模型預測值$
 $yi​：實際觀察值$
 $n：樣本總數$
 
-- **程式碼：**
-	- 使用`scikit-learn`
+### **程式碼：**
+使用`scikit-learn`
 ```python
 import numpy as np
 from sklearn.metrics import mean_absolute_error, mean_squared_error
