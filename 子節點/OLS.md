@@ -1,3 +1,7 @@
+---
+tags:
+  - 子節點
+---
 OLS (Ordinary Least Squares, 普通最小平方法)
 
 - **定義與公式：** OLS 是統計學中最常見的回歸方法，核心假設是 X（自變數）無誤差，==y（依變數）存在隨機誤差==。其目標是最小化實際值 $y$ 與預測值 $\hat y$ 之間的**垂直距離平方和**。
@@ -12,7 +16,6 @@ OLS (Ordinary Least Squares, 普通最小平方法)
 	```python
 	import numpy as np
 	from sklearn.linear_model import LinearRegression
-	#可使用pandas讀取csv檔
 	
 	# 範例數據
 	X = np.array([[1], [2], [3], [4], [5]])

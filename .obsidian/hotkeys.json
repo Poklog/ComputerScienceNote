@@ -1,0 +1,10 @@
+{
+  "properties:open-local": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
+    }
+  ]
+}
