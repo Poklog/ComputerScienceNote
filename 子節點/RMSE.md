@@ -1,4 +1,4 @@
-均方根誤差 (RMSE, Root Mean Squared Error)*
+均方根誤差 (RMSE, Root Mean Squared Error)
 
 RMSE 是 [[MSE]] 的算術平方根
 它的優點是==將誤差的單位還原到與原始數據相同的維度==
